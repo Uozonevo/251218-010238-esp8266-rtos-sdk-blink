@@ -1,5 +1,10 @@
 # ESP8266 Blinky Project
+
+<!--![ESP8266 Image](ESP8266img.jpg)-->
+<p>
+<img align="left" hspace=20 src="ESP8266img.jpg">  
 This is a test project to show that the ESP8266 board I acquired works as intended. To start this project, I went through a number trials attempting to flash the LED on the RTC.
+</p>
 
 ## Progression 📈
 To start this project, I looked at the data sheet for the ESP8266 nodeMCUv2 and reviewed where the LED was. I connected the board to my computer and opened up VSCode to see if it would show any serial ports. 
@@ -49,4 +54,4 @@ Within this code snippet I manipulated the portTICK_RATE_MS from 1000 to 2000 to
 
 > [!CAUTION]
 > Negative potential consequences of an action.
->
+-->
