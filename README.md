@@ -6,19 +6,19 @@ To start this project, I looked at the data sheet for the ESP8266 nodeMCUv2 and 
 
 **Steps and Description**: 
 1. Download ESP-IDF: I downloaded the ESP-IDF extension through VSCode for projects relating to ESP boards but realized this extension only applies to newer ESP32 boards. 
-    > [!NOTE]  
-    > Decided to keep as I also acquired an ESP32 board for future projects
+> [!NOTE]
+> Decided to keep as I also acquired an ESP32 board for future projects
 
 2. Download PlatformIO: After reading up on which IDE extension to use for my current board, I downloaded the PlatformIO extension in VSCode to set up my project
 3. I selected the example blinky project from the PIO HOME and configured my environment to include the current board.
 4. When I compiled the project, I received a compilation error stating that the included libraries were not recognized
-    > [!NOTE]
-    > For future references, I will compile from the PlatformIO activity bar for ease of access
+> [!NOTE]
+> For future references, I will compile from the PlatformIO activity bar for ease of access
 5. I was able to bypass the compilation error and successfully build my project, until I ran into another error...
-    > [!TIP]
-    > Make sure your USB driver is recognizable and up-to-date
-    
     Yes...My USB driver was not compatible for my device. So to make sure I got the right one, I went to my device manager and viewed the version number for my device which was **CP210x USB to UART Bridge Controller Driver**, a universal Windows Drvier.
+> [!TIP]
+> Make sure your USB driver is recognizable and up-to-date
+
 6. After successfully installing the driver, my serial port was recognized as COM3, from here I could now build and upload my project onto the board.
 
 ## Manipulating and Testing the Code
@@ -36,9 +36,6 @@ gpio16_output_conf();
 Within this code snippet I manipulated the portTICK_RATE_MS from 1000 to 2000 to slow down the rate of blinking to 2 seconds in my forever loop.
 
  
-
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
 
 <!--
 > [!TIP]
